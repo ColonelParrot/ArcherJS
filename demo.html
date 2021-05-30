@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script src="../src/ArcherJS.min.js"></script>
+        <style>
+            canvas{
+                border:1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ArcherJS demo</h1>
+        <canvas width="500" height="250"></canvas>
+        <br/>
+        <b>cx</b>
+        <input type="range" id="x" min="1" max="500" value="250">
+        <b>cy</b>
+        <input type="range" id="y" min="1" max="250" value="125">
+        <b>radius</b>
+        <input type="range" id="radius" min="1" max="100" value="20">
+        <b>origin</b>
+        <input type="range" id="origin" min="1" max="360" value="0">
+        <b>degree</b>
+        <input type="range" id="degree" min="1" max="360" value="90">
+        <br><br/>
+        What your JS should look like:<br/>
+        <pre id="constructed"></pre>
+        <script>
+            var canvas = document.querySelector('canvas');
+            var ctx = canvas.getContext('2d');
+            var selected = ArcherJS(canvas);
+            var inputs = document.querySelectorAll('input');
+            var x = document.getElementById("x");
+            var y = document.getElementById("y");
+            var radius = document.getElementById("radius");
+            var origin = document.getElementById("origin");
+            var degree = document.getElementById("degree");
+            var consrtucted = document.getElementById("constructed");
+            function inputHandler(){
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                selected.fromAngle(x.valueAsNumber, y.valueAsNumber, radius.valueAsNumber, origin.valueAsNumber, degree.valueAsNumber);
+                constructed.textContent = `ArcherJS(canvas).fromAngle(${x.valueAsNumber}, ${y.valueAsNumber}, ${radius.valueAsNumber}, ${origin.valueAsNumber}, ${degree.valueAsNumber});`
+            }
+            inputs.forEach((e)=>{
+                e.addEventListener('input', inputHandler);
+            })
+            inputHandler();
+        </script>
+    </body>
+</html>
