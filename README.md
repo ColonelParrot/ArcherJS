@@ -60,6 +60,14 @@ Supported across nearly **all** browsers, including IE and on mobile:
 
 If your browser supports [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), it supports ArcherJS. 
 
+## Import
+
+ArcherJS is available through JsDevlir CDN. Add this to the `<head>` tag of your document:
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/ColonelParrot/ArcherJS@main/src/ArcherJS.min.js"></script>
+```
+
 ## Demo
 
 Capability demo here: https://colonelparrot.github.io/ArcherJS/demo.html
