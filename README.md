@@ -48,7 +48,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/65585002/120123281-f0cc6f80-c17b-11eb-8877-8c4b18e6846d.png)
 
 
-View the full capabilities of ArcherJS over at [https://github.com/ColonelParrot/ArcherJS/blob/main/documentation/Documentation.md]()
+View the full capabilities of ArcherJS over at [documentation](https://github.com/ColonelParrot/ArcherJS/blob/main/documentation/Documentation.md)
 
 ## Browser Support
 
