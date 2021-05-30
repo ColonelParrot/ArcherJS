@@ -65,9 +65,11 @@ If your browser supports [Canvas API](https://developer.mozilla.org/en-US/docs/W
 ArcherJS is available through JsDevlir CDN. Add this to the `<head>` tag of your document:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/ColonelParrot/ArcherJS@main/src/ArcherJS.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ColonelParrot/ArcherJS@1.0.0/src/ArcherJS.min.js"></script>
 ```
 
 ## Demo
 
 Capability demo here: https://colonelparrot.github.io/ArcherJS/demo.html
+
+Animation demo here: https://colonelparrot.github.io/ArcherJS/animatedWheel.html
